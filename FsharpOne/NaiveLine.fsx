@@ -24,5 +24,9 @@ let naiveLine (x0,y0) (x1,y1) color (bitmap:Bitmap)=
 let path = __SOURCE_DIRECTORY__ + "\\bitmaps\\"
 let pathAndFilename = Path.Combine(path,"naive.png") 
 let bitmap = new Bitmap(32,32)
-naiveLine  (7,10) (15,19) Color.Red bitmap
+naiveLine  (3,7) (4,27) Color.Red bitmap
+naiveLine  (6,7) (10,27) Color.Blue bitmap
+naiveLine  (7,7) (13,20) Color.Green bitmap
+naiveLine  (13,7) (17,17) Color.Orange bitmap
+naiveLine  (16,7) (22,17) Color.Black bitmap
 bitmap.Save(pathAndFilename)
